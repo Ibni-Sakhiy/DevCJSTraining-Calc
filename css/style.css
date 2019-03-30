@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'digital-7_monomono';
+    src: url('digital-7_mono-webfont.woff2') format('woff2'),
+         url('digital-7_mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'Nanum Gothic Coding', monospace;
+    background-image: linear-gradient(rgba(0, 0, 0,.3),rgba(0, 0, 0,.3)),url(../img/bckg.jpg);
+    background-position: 0 30%;
+    background-size: cover;
+}
+
+#container {
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+#calculator {
+    width: 320px;
+    height: 500px;
+    background-color: #eaedef;
+    margin: 20px auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,.2), 0 6px 20px 0 rgba(0, 0, 0,.19);
+}
+
+#display {
+    color: #000000;
+    font-family: 'digital-7_monomono';
+    font-size: 30px;
+    top: 25px;
+    left: 7px;
+    background-color: #eaedef;
+    position: relative;
+    width: 300px;
+    height: 65px;
+    text-align: right;
+}
+
+#keyboard {
+    padding: 0;
+    margin: 25px  auto;
+}
+
+.operator, .number, .empty {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.operator:hover, .number:hover, .empty:hover {
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,.2), 0 6px 20px 0 rgba(0, 0, 0,.19);
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.number, .operator {
+    cursor: pointer;
+}
+
+.operator:active, .number:active {
+    font-size: 13px;
+}
+
+.operator:focus .number:focus .empty:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: #ffa500;
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: #f08080;
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: #9477af;
+}
